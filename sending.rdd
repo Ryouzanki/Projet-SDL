@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<Diagram language="sdl" type="prcs" name="sending" showMsgData="full" linksCrossingAllowed="TRUE" cellWidthMm="4">
+
+<DiagramPartition name="Part. 0" nbPagesH="1" nbPagesV="1">
+<PageSpecification pageWidth="21" pageHeight="29.7" topMargin="0" bottomMargin="0" leftMargin="0" rightMargin="0" pageFooter="FALSE"/>
+
+<Symbol symbolId="SYMB1" type="sdlPrcsDgmFrm" xCenter="297" yCenter="420" fixedDimensions="TRUE" width="551" height="775" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text></Text>
+
+<Symbol symbolId="SYMB2" type="sdlStart" xCenter="209" yCenter="165" fixedDimensions="TRUE" width="60" height="25" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text></Text>
+</Symbol>
+
+<Symbol symbolId="SYMB3" type="sdlStop" xCenter="198" yCenter="495" fixedDimensions="TRUE" width="24" height="24" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text></Text>
+</Symbol>
+
+<Symbol symbolId="SYMB4" type="sdlSendSig" xCenter="176" yCenter="308" fixedDimensions="FALSE" width="132" height="44" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text>Trame(1,2,</Text>
+</Symbol>
+</Symbol>
+</DiagramPartition>
+
+</Diagram>
