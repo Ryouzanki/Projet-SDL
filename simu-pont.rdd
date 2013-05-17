@@ -43,20 +43,22 @@
 
 <Symbol symbolId="SYMB17" type="sdlText" xCenter="1221" yCenter="561" fixedDimensions="TRUE" width="770" height="374" color="#000000" fillColor="#ffffff">
 <Description></Description>
-<Text>SYNTYPE AdresseIP = Integer
+<Text>/*SYNTYPE AdresseIP = Integer
 ENDSYNTYPE;
 SYNTYPE AdresseMAC = Integer
+ENDSYNTYPE;
+SYNTYPE Type = Integer
 ENDSYNTYPE;
 NEWTYPE Paquet
   STRUCT
   IPD AdresseIP;
   IPS AdresseIP;
-message Charstring;
+  message Charstring;
 ENDNEWTYPE
 SIGNAL lancer_ping(AdresseIP);
 SIGNAL configIP(AdresseIP);
 SIGNAL configMAC(AdresseMAC);
-SIGNAL Trame(AdresseMAC,AdresseMAC,type(type),paquet);</Text>
+SIGNAL Trame(AdresseMAC,AdresseMAC,Type,Paquet);*/</Text>
 </Symbol>
 
 <Symbol symbolId="SYMB18" type="sdlBlkTypeInst" xCenter="660" yCenter="330" fixedDimensions="FALSE" width="176" height="44" color="#000000" fillColor="#ffffff">

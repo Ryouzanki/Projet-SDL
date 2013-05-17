@@ -1,0 +1,16 @@
+SYNTYPE AdresseIP = Integer
+ENDSYNTYPE;
+SYNTYPE AdresseMAC = Integer
+ENDSYNTYPE;
+SYNTYPE Type = Integer
+ENDSYNTYPE;
+NEWTYPE Paquet
+  STRUCT
+  IPD AdresseIP;
+  IPS AdresseIP;
+  message Charstring;
+ENDNEWTYPE;
+SIGNAL lancer_ping(AdresseIP);
+SIGNAL configIP(AdresseIP);
+SIGNAL configMAC(AdresseMAC);
+SIGNAL Trame(AdresseMAC,AdresseMAC,Type,Paquet);
