@@ -5,7 +5,7 @@
 <Diagram language="sdl" type="sys" name="simu-pont" showMsgData="full" linksCrossingAllowed="FALSE" cellWidthMm="4">
 
 <DiagramPartition name="Part. 0" nbPagesH="5" nbPagesV="1">
-<PageSpecification pageWidth="21" pageHeight="29.7" topMargin="0" bottomMargin="0" leftMargin="0" rightMargin="0" pageFooter="FALSE"/>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="0.0" bottomMargin="0.0" leftMargin="0.0" rightMargin="0.0" pageFooter="FALSE"/>
 
 <Symbol symbolId="SYMB1" type="sdlSysDgmFrm" xCenter="1488" yCenter="420" fixedDimensions="TRUE" width="2932" height="775" color="#000000" fillColor="#ffffff">
 <Description></Description>
@@ -16,7 +16,7 @@
 <Text>void</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB11" type="sdlBlkTypeInst" xCenter="209" yCenter="319" fixedDimensions="FALSE" width="110" height="44" color="#000000" fillColor="#ffffff">
+<Symbol symbolId="SYMB11" type="sdlBlkTypeInst" xCenter="187" yCenter="297" fixedDimensions="FALSE" width="110" height="44" color="#000000" fillColor="#ffffff">
 <Description></Description>
 <Text>PC1 : PC</Text>
 </Symbol>
@@ -49,13 +49,14 @@ SYNTYPE AdresseMAC = Integer
 ENDSYNTYPE;
 NEWTYPE Paquet
   STRUCT
-  IPsource AdresseIP;
-  IPdest AdresseIP;
+  IPD AdresseIP;
+  IPS AdresseIP;
+message Charstring;
 ENDNEWTYPE
 SIGNAL lancer_ping(AdresseIP);
 SIGNAL configIP(AdresseIP);
 SIGNAL configMAC(AdresseMAC);
-SIGNAL Trame(AdresseMAC,AdresseMAC,type(CharString),paquet);</Text>
+SIGNAL Trame(AdresseMAC,AdresseMAC,type(type),paquet);</Text>
 </Symbol>
 
 <Symbol symbolId="SYMB18" type="sdlBlkTypeInst" xCenter="660" yCenter="330" fixedDimensions="FALSE" width="176" height="44" color="#000000" fillColor="#ffffff">
@@ -88,17 +89,19 @@ SIGNAL Trame(AdresseMAC,AdresseMAC,type(CharString),paquet);</Text>
 
 </Link>
 
-<Link linkId="LINK28" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK88" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>ssh_PC1</Text>
 <Connector attachedSymbolId="SYMB11" type="chnlgate" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[lancer_ping, configIP, configMAC]</Text>
+<Text id="1">[lancer_ping, config_IP, config_MAC]</Text>
 <Text id="2">__</Text>
 </Connector>
-<Connector attachedSymbolId="SYMB1" type="chnl" isOutside="FALSE" side="n" position="-0.857094133697" endType="midarrow">
+<Connector attachedSymbolId="SYMB1" type="chnl" isOutside="FALSE" side="n" position="-0.857435197817" endType="midarrow">
 <Text id="1">[]</Text>
 <Text id="2"></Text>
 </Connector>
-<LinkSegment orientation="v" length="-319"/>
+<LinkSegment orientation="v" length="-143"/>
+<LinkSegment orientation="h" length="22"/>
+<LinkSegment orientation="v" length="-165"/>
 
 </Link>
 
@@ -172,7 +175,7 @@ SIGNAL Trame(AdresseMAC,AdresseMAC,type(CharString),paquet);</Text>
 
 </Link>
 
-<Link linkId="LINK82" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK87" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>P1</Text>
 <Connector attachedSymbolId="SYMB18" type="chnlgate" isOutside="TRUE" side="y" position="-0.5" endType="midarrow">
 <Text id="1">[Trame]</Text>
@@ -182,7 +185,9 @@ SIGNAL Trame(AdresseMAC,AdresseMAC,type(CharString),paquet);</Text>
 <Text id="1">[Trame]</Text>
 <Text id="2">__</Text>
 </Connector>
-<LinkSegment orientation="h" length="-451"/>
+<LinkSegment orientation="h" length="-220"/>
+<LinkSegment orientation="v" length="-22"/>
+<LinkSegment orientation="h" length="-253"/>
 
 </Link>
 

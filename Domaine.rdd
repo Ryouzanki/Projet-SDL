@@ -2,10 +2,10 @@
 
 <!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
 
-<Diagram language="sdl" type="blktype" name="domaine" showMsgData="full" linksCrossingAllowed="FALSE" cellWidthMm="4">
+<Diagram language="sdl" type="blktype" name="Domaine" showMsgData="full" linksCrossingAllowed="FALSE" cellWidthMm="4">
 
 <DiagramPartition name="Part. 0" nbPagesH="1" nbPagesV="1">
-<PageSpecification pageWidth="21" pageHeight="29.7" topMargin="0" bottomMargin="0" leftMargin="0" rightMargin="0" pageFooter="FALSE"/>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="0.0" bottomMargin="0.0" leftMargin="0.0" rightMargin="0.0" pageFooter="FALSE"/>
 
 <Symbol symbolId="SYMB1" type="sdlBlkTypeDgmFrm" xCenter="297" yCenter="420" fixedDimensions="TRUE" width="551" height="775" color="#000000" fillColor="#ffffff">
 <Description></Description>
@@ -31,17 +31,17 @@
 
 </Link>
 
-<Link linkId="LINK12" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>P4</Text>
-<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Link linkId="LINK14" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>P3</Text>
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[Trame]</Text>
 <Text id="2"></Text>
 </Connector>
-<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="w" position="-0.118709677419" endType="midarrow">
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="s" position="0.0399274047187" endType="midarrow">
 <Text id="1">[Trame]</Text>
 <Text id="2">__</Text>
 </Connector>
-<LinkSegment orientation="h" length="-286"/>
+<LinkSegment orientation="v" length="440"/>
 
 </Link>
 
@@ -59,17 +59,17 @@
 
 </Link>
 
-<Link linkId="LINK14" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>P3</Text>
-<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Link linkId="LINK12" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>P4</Text>
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
 <Text id="1">[Trame]</Text>
 <Text id="2"></Text>
 </Connector>
-<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="s" position="0.0399274047187" endType="midarrow">
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="w" position="-0.118709677419" endType="midarrow">
 <Text id="1">[Trame]</Text>
 <Text id="2">__</Text>
 </Connector>
-<LinkSegment orientation="v" length="440"/>
+<LinkSegment orientation="h" length="-286"/>
 
 </Link>
 </DiagramPartition>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<Diagram language="sdl" type="blk" name="IP" showMsgData="full" linksCrossingAllowed="FALSE" cellWidthMm="4">
+
+<DiagramPartition name="Part. 0" nbPagesH="2" nbPagesV="1">
+<PageSpecification pageWidth="21" pageHeight="29.7" topMargin="0" bottomMargin="0" leftMargin="0" rightMargin="0" pageFooter="FALSE"/>
+
+<Symbol symbolId="SYMB1" type="sdlBlkDgmFrm" xCenter="595" yCenter="420" fixedDimensions="TRUE" width="1146" height="775" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text></Text>
+
+<Symbol symbolId="SYMB3" type="sdlPrcs" xCenter="264" yCenter="253" fixedDimensions="FALSE" width="132" height="44" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text>transmettre</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB4" type="sdlPrcs" xCenter="803" yCenter="253" fixedDimensions="TRUE" width="176" height="44" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text>MAJ-cacheARP</Text>
+</Symbol>
+</Symbol>
+
+<Link linkId="LINK4" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>in</Text>
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="-0.577661431065" endType="midarrow">
+<Text id="1">[messages-icmp]</Text>
+<Text id="2">SAP-ICMP</Text>
+</Connector>
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[messages-icmp]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="121"/>
+<LinkSegment orientation="h" length="22"/>
+<LinkSegment orientation="v" length="132"/>
+
+</Link>
+
+<Link linkId="LINK5" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>out</Text>
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[Paquet]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="s" position="-0.539267015707" endType="midarrow">
+<Text id="1">[Paquet(AdresseMAC)]</Text>
+<Text id="2">SAP-IP</Text>
+</Connector>
+<LinkSegment orientation="v" length="526"/>
+
+</Link>
+
+<Link linkId="LINK2" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>consultation</Text>
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[AdresseMAC]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB4" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[AdresseIP]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="539"/>
+
+</Link>
+
+<Link linkId="LINK3" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>req</Text>
+<Connector attachedSymbolId="SYMB4" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[AdresseMAC]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="0.38219895288" endType="midarrow">
+<Text id="1">[AdresseIP]</Text>
+<Text id="2">requete_ARP</Text>
+</Connector>
+<LinkSegment orientation="v" length="-132"/>
+<LinkSegment orientation="h" length="-11"/>
+<LinkSegment orientation="v" length="-121"/>
+
+</Link>
+</DiagramPartition>
+
+</Diagram>

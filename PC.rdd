@@ -5,97 +5,164 @@
 <Diagram language="sdl" type="blktype" name="PC" showMsgData="full" linksCrossingAllowed="FALSE" cellWidthMm="4">
 
 <DiagramPartition name="Part. 0" nbPagesH="2" nbPagesV="1">
-<PageSpecification pageWidth="21" pageHeight="29.7" topMargin="0" bottomMargin="0" leftMargin="0" rightMargin="0" pageFooter="FALSE"/>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="0.0" bottomMargin="0.0" leftMargin="0.0" rightMargin="0.0" pageFooter="FALSE"/>
 
 <Symbol symbolId="SYMB1" type="sdlBlkTypeDgmFrm" xCenter="595" yCenter="420" fixedDimensions="TRUE" width="1146" height="775" color="#000000" fillColor="#ffffff">
 <Description></Description>
 <Text></Text>
 
-<Symbol symbolId="SYMB6" type="sdlBlk" xCenter="231" yCenter="253" fixedDimensions="TRUE" width="110" height="44" color="#000000" fillColor="#ffffff">
-<Description></Description>
-<Text>ICMP</Text>
-</Symbol>
-
-<Symbol symbolId="SYMB7" type="sdlBlk" xCenter="858" yCenter="253" fixedDimensions="FALSE" width="66" height="44" color="#000000" fillColor="#ffffff">
+<Symbol symbolId="SYMB10" type="sdlBlk" xCenter="726" yCenter="418" fixedDimensions="FALSE" width="66" height="44" color="#000000" fillColor="#ffffff">
 <Description></Description>
 <Text>ARP</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB8" type="sdlBlk" xCenter="583" yCenter="583" fixedDimensions="FALSE" width="66" height="44" color="#000000" fillColor="#ffffff">
+<Symbol symbolId="SYMB11" type="sdlText" xCenter="605" yCenter="220" fixedDimensions="TRUE" width="616" height="286" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text>NEWTYPE CacheArp
+  Array(AdresseIP,AdresseMAC)
+ENDNEWTYPE;
+SIGNAL echo_replay(AdresseIP);
+SIGNAL echo_request(AdresseIP);
+SIGNALLIST messages-icmp=echo_replay(AdresseIP),echo_request(AdresseIP);
+SIGNAL ping(AdresseIP);
+NEWTYPE</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB12" type="sdlBlk" xCenter="429" yCenter="605" fixedDimensions="FALSE" width="66" height="44" color="#000000" fillColor="#ffffff">
 <Description></Description>
 <Text>MAC</Text>
 </Symbol>
+
+<Symbol symbolId="SYMB13" type="sdlBlk" xCenter="165" yCenter="231" fixedDimensions="TRUE" width="132" height="88" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text>ICMP</Text>
 </Symbol>
 
-<Link linkId="LINK12" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>util1</Text>
-<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="-0.596858638743" endType="midarrow">
+<Symbol symbolId="SYMB9" type="sdlBlk" xCenter="99" yCenter="429" fixedDimensions="TRUE" width="110" height="44" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text>IP</Text>
+</Symbol>
+</Symbol>
+
+<Link linkId="LINK31" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>Ext</Text>
+<Connector attachedSymbolId="SYMB12" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[trame]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="s" position="-0.270506108202" endType="midarrow">
+<Text id="1">[trame]</Text>
+<Text id="2">port</Text>
+</Connector>
+<LinkSegment orientation="v" length="77"/>
+<LinkSegment orientation="h" length="-11"/>
+<LinkSegment orientation="v" length="97"/>
+
+</Link>
+
+<Link linkId="LINK32" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>config_mac</Text>
+<Connector attachedSymbolId="SYMB12" type="chnl" isOutside="TRUE" side="x" position="0.666666666667" endType="midarrow">
+<Text id="1">[config_MAC]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="s" position="-0.155322862129" endType="midarrow">
 <Text id="1">[]</Text>
 <Text id="2">__</Text>
 </Connector>
-<Connector attachedSymbolId="SYMB6" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[lancer_ping, configIP]</Text>
-<Text id="2"></Text>
-</Connector>
-<LinkSegment orientation="v" length="253"/>
+<LinkSegment orientation="v" length="165"/>
+<LinkSegment orientation="h" length="33"/>
+<LinkSegment orientation="v" length="9"/>
 
 </Link>
 
-<Link linkId="LINK13" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>util2</Text>
-<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="0.497382198953" endType="midarrow">
+<Link linkId="LINK23" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>SAP-ARP</Text>
+<Connector attachedSymbolId="SYMB12" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[Paquet(AdresseMAC)]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB10" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[trame]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="297"/>
+<LinkSegment orientation="v" length="-187"/>
+
+</Link>
+
+<Link linkId="LINK29" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>util</Text>
+<Connector attachedSymbolId="SYMB13" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[ping(AdresseIP)]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="-0.82722513089" endType="midarrow">
+<Text id="1">[]</Text>
+<Text id="2">sup</Text>
+</Connector>
+<LinkSegment orientation="v" length="-121"/>
+<LinkSegment orientation="h" length="-66"/>
+<LinkSegment orientation="v" length="-110"/>
+
+</Link>
+
+<Link linkId="LINK30" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>SAP-ICMP</Text>
+<Connector attachedSymbolId="SYMB13" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[messages-icmp]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB9" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[messages-icmp]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="99"/>
+<LinkSegment orientation="h" length="-66"/>
+<LinkSegment orientation="v" length="99"/>
+
+</Link>
+
+<Link linkId="LINK33" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>config_IP</Text>
+<Connector attachedSymbolId="SYMB9" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[config_IP]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="w" position="0.108387096774" endType="midarrow">
 <Text id="1">[]</Text>
 <Text id="2">__</Text>
 </Connector>
-<Connector attachedSymbolId="SYMB7" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[configARP]</Text>
-<Text id="2"></Text>
-</Connector>
-<LinkSegment orientation="v" length="253"/>
+<LinkSegment orientation="h" length="-99"/>
 
 </Link>
 
-<Link linkId="LINK9" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>MAC-ICMP</Text>
-<Connector attachedSymbolId="SYMB6" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Link linkId="LINK21" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>requete-ARP</Text>
+<Connector attachedSymbolId="SYMB9" type="chnl" isOutside="TRUE" side="y" position="-0.5" endType="midarrow">
+<Text id="1">[AdresseMAC]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB10" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[AdresseIP]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="627"/>
+
+</Link>
+
+<Link linkId="LINK24" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>SAP-IP</Text>
+<Connector attachedSymbolId="SYMB9" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[Paquet]</Text>
 <Text id="2"></Text>
 </Connector>
-<Connector attachedSymbolId="SYMB8" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
-<Text id="1">[Paquet]</Text>
+<Connector attachedSymbolId="SYMB12" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[Paquet(AdresseMAC)]</Text>
 <Text id="2"></Text>
 </Connector>
-<LinkSegment orientation="v" length="330"/>
-<LinkSegment orientation="h" length="352"/>
-
-</Link>
-
-<Link linkId="LINK11" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>ext</Text>
-<Connector attachedSymbolId="SYMB8" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[Trame]</Text>
-<Text id="2"></Text>
-</Connector>
-<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="s" position="0.0174520069808" endType="midarrow">
-<Text id="1">[Trame]</Text>
-<Text id="2">__</Text>
-</Connector>
-<LinkSegment orientation="v" length="196"/>
-
-</Link>
-
-<Link linkId="LINK10" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>MAC-ARP</Text>
-<Connector attachedSymbolId="SYMB8" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
-<Text id="1">[Trame]</Text>
-<Text id="2"></Text>
-</Connector>
-<Connector attachedSymbolId="SYMB7" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[Trame]</Text>
-<Text id="2"></Text>
-</Connector>
-<LinkSegment orientation="h" length="275"/>
-<LinkSegment orientation="v" length="-330"/>
+<LinkSegment orientation="v" length="176"/>
+<LinkSegment orientation="h" length="330"/>
 
 </Link>
 </DiagramPartition>
