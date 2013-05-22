@@ -14,3 +14,7 @@ SIGNAL lancer_ping(AdresseIP);
 SIGNAL configIP(AdresseIP);
 SIGNAL configMAC(AdresseMAC);
 SIGNAL Trame(AdresseMAC,AdresseMAC,Type,Paquet);
+SIGNAL TrameS(AdresseMAC,AdresseMAC,Type,Paquet);
+SIGNAL TrameN(AdresseMAC,AdresseMAC,Type,Paquet);
+SIGNAL TrameW(AdresseMAC,AdresseMAC,Type,Paquet);
+SIGNAL TrameE(AdresseMAC,AdresseMAC,Type,Paquet);

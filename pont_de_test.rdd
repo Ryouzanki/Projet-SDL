@@ -16,12 +16,6 @@
 <Text>commuttest</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB20" type="sdlText" xCenter="759" yCenter="319" fixedDimensions="TRUE" width="528" height="88" color="#000000" fillColor="#ffffff">
-<Description></Description>
-<Text>SIGNAL TrameS(AdresseMAC,AdresseMAC,Type,Paquet);
-SIGNAL TrameN(AdresseMAC,AdresseMAC,Type,Paquet);</Text>
-</Symbol>
-
 <Symbol symbolId="SYMB3" type="sdlPrcs" xCenter="264" yCenter="198" fixedDimensions="FALSE" width="132" height="44" color="#000000" fillColor="#ffffff">
 <Description></Description>
 <Text>north_gate</Text>
