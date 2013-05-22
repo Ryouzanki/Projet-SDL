@@ -24,7 +24,7 @@ SIGNAL TrameN(AdresseMAC,AdresseMAC,Type,Paquet);</Text>
 
 <Symbol symbolId="SYMB3" type="sdlPrcs" xCenter="264" yCenter="198" fixedDimensions="FALSE" width="132" height="44" color="#000000" fillColor="#ffffff">
 <Description></Description>
-<Text>noth_gate</Text>
+<Text>north_gate</Text>
 </Symbol>
 
 <Symbol symbolId="SYMB4" type="sdlPrcs" xCenter="264" yCenter="550" fixedDimensions="FALSE" width="132" height="44" color="#000000" fillColor="#ffffff">
@@ -53,7 +53,7 @@ SIGNAL TrameN(AdresseMAC,AdresseMAC,Type,Paquet);</Text>
 <Text id="1">[Trame]</Text>
 <Text id="2"></Text>
 </Connector>
-<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="-0.538394415358" endType="midarrow">
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="-0.539267015707" endType="midarrow">
 <Text id="1">[Trame]</Text>
 <Text id="2">north</Text>
 </Connector>
