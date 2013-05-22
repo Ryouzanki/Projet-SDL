@@ -21,23 +21,6 @@
 <Text>recoit</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB6" type="sdlText" xCenter="715" yCenter="319" fixedDimensions="TRUE" width="616" height="352" color="#000000" fillColor="#ffffff">
-<Description></Description>
-<Text>/*SYNTYPE AdresseIP = Integer
-ENDSYNTYPE;
-SYNTYPE AdresseMAC = Integer
-ENDSYNTYPE;
-SYNTYPE Type = Integer
-ENDSYNTYPE;
-NEWTYPE Paquet
-  STRUCT
-  IPD AdresseIP;
-  IPS AdresseIP;
-  message Charstring;
-ENDNEWTYPE
-SIGNAL Trame(AdresseMAC,AdresseMAC,Type,Paquet);*/</Text>
-</Symbol>
-
 <Symbol symbolId="SYMB7" type="sdlBlk" xCenter="198" yCenter="341" fixedDimensions="FALSE" width="154" height="44" color="#000000" fillColor="#ffffff">
 <Description></Description>
 <Text>pont_de_test</Text>
