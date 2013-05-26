@@ -50,7 +50,7 @@
 <Text id="2"></Text>
 </Connector>
 <Connector attachedSymbolId="SYMB4" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[TrameN]</Text>
+<Text id="1">[TrameS]</Text>
 <Text id="2"></Text>
 </Connector>
 <LinkSegment orientation="v" length="187"/>
@@ -76,7 +76,7 @@
 <Link linkId="LINK10" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>P12</Text>
 <Connector attachedSymbolId="SYMB7" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[TrameS]</Text>
+<Text id="1">[TrameN]</Text>
 <Text id="2"></Text>
 </Connector>
 <Connector attachedSymbolId="SYMB5" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">

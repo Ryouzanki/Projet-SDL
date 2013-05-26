@@ -44,7 +44,7 @@ DCL d Paquet;</Text>
 
 <Symbol symbolId="SYMB5" type="sdlInputSig" xCenter="671" yCenter="253" fixedDimensions="FALSE" width="198" height="44" color="#000000" fillColor="#ffffff">
 <Description></Description>
-<Text>TrameS(a,b,c,d)</Text>
+<Text>TrameN(a,b,c,d)</Text>
 </Symbol>
 
 <Symbol symbolId="SYMB7" type="sdlSendSig" xCenter="638" yCenter="451" fixedDimensions="FALSE" width="176" height="44" color="#000000" fillColor="#ffffff">

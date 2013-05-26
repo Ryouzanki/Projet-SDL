@@ -5,7 +5,7 @@
 <Diagram language="sdl" type="prcs" name="commutation" showMsgData="full" linksCrossingAllowed="TRUE" cellWidthMm="4">
 
 <DiagramPartition name="Part. 0" nbPagesH="2" nbPagesV="1">
-<PageSpecification pageWidth="21" pageHeight="29.7" topMargin="0" bottomMargin="0" leftMargin="0" rightMargin="0" pageFooter="FALSE"/>
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="0.0" bottomMargin="0.0" leftMargin="0.0" rightMargin="0.0" pageFooter="FALSE"/>
 
 <Symbol symbolId="SYMB1" type="sdlPrcsDgmFrm" xCenter="595" yCenter="420" fixedDimensions="TRUE" width="1146" height="775" color="#000000" fillColor="#ffffff">
 <Description></Description>
@@ -34,12 +34,12 @@ DCL d Paquet;</Text>
 
 <Symbol symbolId="SYMB6" type="sdlSendSig" xCenter="847" yCenter="627" fixedDimensions="FALSE" width="176" height="44" color="#000000" fillColor="#ffffff">
 <Description></Description>
-<Text>TrameS(a,b,c,d)</Text>
+<Text>TrameN(a,b,c,d)</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB7" type="sdlSendSig" xCenter="308" yCenter="616" fixedDimensions="FALSE" width="176" height="44" color="#000000" fillColor="#ffffff">
+<Symbol symbolId="SYMB7" type="sdlSendSig" xCenter="308" yCenter="594" fixedDimensions="FALSE" width="176" height="44" color="#000000" fillColor="#ffffff">
 <Description></Description>
-<Text>TrameN(a,b,c,d)</Text>
+<Text>TrameS(a,b,c,d)</Text>
 </Symbol>
 
 <Symbol symbolId="SYMB8" type="sdlState" xCenter="539" yCenter="715" fixedDimensions="FALSE" width="66" height="44" color="#000000" fillColor="#ffffff">
@@ -81,7 +81,7 @@ DCL d Paquet;</Text>
 
 </Link>
 
-<Link linkId="LINK17" type="sbvoid" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK22" type="sbvoid" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text></Text>
 <Connector attachedSymbolId="SYMB3" type="void" isOutside="TRUE" side="x" position="0.0" endType="voidend">
 <Text id="1"></Text>
@@ -91,7 +91,7 @@ DCL d Paquet;</Text>
 <Text id="1"></Text>
 <Text id="2"></Text>
 </Connector>
-<LinkSegment orientation="v" length="495"/>
+<LinkSegment orientation="v" length="473"/>
 
 </Link>
 
@@ -125,7 +125,7 @@ DCL d Paquet;</Text>
 
 </Link>
 
-<Link linkId="LINK18" type="sbvoid" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK21" type="sbvoid" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text></Text>
 <Connector attachedSymbolId="SYMB7" type="void" isOutside="TRUE" side="x" position="0.0" endType="voidend">
 <Text id="1"></Text>
@@ -135,7 +135,7 @@ DCL d Paquet;</Text>
 <Text id="1"></Text>
 <Text id="2"></Text>
 </Connector>
-<LinkSegment orientation="v" length="55"/>
+<LinkSegment orientation="v" length="77"/>
 <LinkSegment orientation="h" length="231"/>
 <LinkSegment orientation="v" length="44"/>
 
