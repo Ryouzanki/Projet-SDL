@@ -11,65 +11,151 @@
 <Description></Description>
 <Text></Text>
 
+<Symbol symbolId="SYMB113" type="sdlPrcs" xCenter="275" yCenter="484" fixedDimensions="FALSE" width="132" height="44" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text>south_gate</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB114" type="sdlPrcs" xCenter="275" yCenter="187" fixedDimensions="FALSE" width="132" height="44" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text>north_gate</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB115" type="sdlPrcs" xCenter="110" yCenter="341" fixedDimensions="FALSE" width="132" height="44" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text>east_gate</Text>
+</Symbol>
+
+<Symbol symbolId="SYMB116" type="sdlPrcs" xCenter="473" yCenter="363" fixedDimensions="FALSE" width="132" height="44" color="#000000" fillColor="#ffffff">
+<Description></Description>
+<Text>west_gate</Text>
+</Symbol>
+
 <Symbol symbolId="SYMB3" type="sdlPrcs" xCenter="286" yCenter="341" fixedDimensions="FALSE" width="110" height="44" color="#000000" fillColor="#ffffff">
 <Description></Description>
 <Text>diffuser</Text>
 </Symbol>
 </Symbol>
 
-<Link linkId="LINK13" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK17" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>P1</Text>
-<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="0.0399274047187" endType="midarrow">
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="n" position="0.0" endType="midarrow">
 <Text id="1">[Trame]</Text>
-<Text id="2">__</Text>
+<Text id="2">north</Text>
 </Connector>
-<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Connector attachedSymbolId="SYMB114" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[Trame]</Text>
 <Text id="2"></Text>
 </Connector>
-<LinkSegment orientation="v" length="341"/>
+<LinkSegment orientation="v" length="187"/>
 
 </Link>
 
-<Link linkId="LINK14" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK16" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>P3</Text>
-<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Connector attachedSymbolId="SYMB113" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[Trame]</Text>
 <Text id="2"></Text>
 </Connector>
 <Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="s" position="0.0399274047187" endType="midarrow">
 <Text id="1">[Trame]</Text>
-<Text id="2">__</Text>
+<Text id="2">south</Text>
 </Connector>
-<LinkSegment orientation="v" length="440"/>
+<LinkSegment orientation="v" length="286"/>
+<LinkSegment orientation="h" length="11"/>
+<LinkSegment orientation="v" length="9"/>
 
 </Link>
 
-<Link linkId="LINK15" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
-<Text>P2</Text>
-<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
-<Text id="1">[Trame]</Text>
+<Link linkId="LINK27" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>C3</Text>
+<Connector attachedSymbolId="SYMB113" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[TrameS]</Text>
 <Text id="2"></Text>
 </Connector>
-<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="e" position="-0.118709677419" endType="midarrow">
-<Text id="1">[Trame]</Text>
-<Text id="2">__</Text>
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[TrameS]</Text>
+<Text id="2"></Text>
 </Connector>
-<LinkSegment orientation="h" length="264"/>
+<LinkSegment orientation="v" length="-77"/>
+<LinkSegment orientation="h" length="11"/>
+<LinkSegment orientation="v" length="-66"/>
 
 </Link>
 
-<Link linkId="LINK12" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK20" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>C1</Text>
+<Connector attachedSymbolId="SYMB114" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[TrameN]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[TrameN]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="v" length="77"/>
+<LinkSegment orientation="h" length="11"/>
+<LinkSegment orientation="v" length="77"/>
+
+</Link>
+
+<Link linkId="LINK18" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>P4</Text>
-<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Connector attachedSymbolId="SYMB115" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
 <Text id="1">[Trame]</Text>
 <Text id="2"></Text>
 </Connector>
-<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="w" position="-0.118709677419" endType="midarrow">
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="w" position="-0.203870967742" endType="midarrow">
 <Text id="1">[Trame]</Text>
-<Text id="2">__</Text>
+<Text id="2">east</Text>
 </Connector>
-<LinkSegment orientation="h" length="-286"/>
+<LinkSegment orientation="v" length="-33"/>
+<LinkSegment orientation="h" length="-110"/>
+
+</Link>
+
+<Link linkId="LINK21" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>C4</Text>
+<Connector attachedSymbolId="SYMB115" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[TrameE]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[TrameE]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="176"/>
+
+</Link>
+
+<Link linkId="LINK26" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>P2</Text>
+<Connector attachedSymbolId="SYMB116" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Text id="1">[Trame]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB1" type="chnlgate" isOutside="FALSE" side="e" position="-0.203870967742" endType="midarrow">
+<Text id="1">[Trame]</Text>
+<Text id="2">west</Text>
+</Connector>
+<LinkSegment orientation="v" length="-55"/>
+<LinkSegment orientation="h" length="77"/>
+
+</Link>
+
+<Link linkId="LINK25" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>C2</Text>
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[TrameW]</Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB116" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
+<Text id="1">[TrameW]</Text>
+<Text id="2"></Text>
+</Connector>
+<LinkSegment orientation="h" length="77"/>
+<LinkSegment orientation="v" length="22"/>
+<LinkSegment orientation="h" length="110"/>
 
 </Link>
 </DiagramPartition>
